@@ -1,0 +1,6 @@
+python-telegram-bot==13.7
+sqlite3==2.6.0
+uuid==1.30
+websockets==10.4
+deep-translator==1.9.2
+requests==2.28.1
