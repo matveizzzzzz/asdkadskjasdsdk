@@ -6,6 +6,7 @@ import asyncio
 import websockets
 from telebot import types
 import csv
+import os
 import random
 from deep_translator import GoogleTranslator
 
@@ -16,8 +17,6 @@ ADMIN_ID = 7940544491
 GENERATION_PRICE = 50
 
 bot = telebot.TeleBot(API_TOKEN)
-
-# Инициализация базы данных
 
 def init_db():
     conn = sqlite3.connect('useras.db')
@@ -34,8 +33,6 @@ def init_db():
     conn.close()
 
 init_db()
-
-# Функции работы с БД
 
 def register_user(username, user_id):
     conn = sqlite3.connect('useras.db')
@@ -68,8 +65,6 @@ def add_generations(username, count):
 
 # Получение рандомной музыки
 
-import os  # в начале файла, если не добавлен
-
 def get_random_music_file():
     try:
         with open('music.csv', newline='', encoding='utf-8') as csvfile:
@@ -82,10 +77,6 @@ def get_random_music_file():
     except:
         return None, None
 
-
-
-
-# Генерация изображения через WebSocket
 
 async def create_image(prompt):
     async with websockets.connect('wss://ws-api.runware.ai/v1') as websocket:
