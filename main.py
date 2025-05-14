@@ -11,7 +11,7 @@ import random
 from deep_translator import GoogleTranslator
 
 
-API_TOKEN = '7626423594:AAGVqn-AVA8kxS_18tniGPBwy5Z2s9KTS_k'
+API_TOKEN = '7955363428:AAETEug-nrrOVhyZMJXSbl61lGFSpBE9giU'
 RUNWARE_API = 'nRRsqiRDM1W2Avir7EI3qpIy4XkPxjPY'
 ADMIN_ID = 7940544491
 GENERATION_PRICE = 50
