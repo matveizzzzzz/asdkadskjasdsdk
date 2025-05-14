@@ -12,7 +12,7 @@ from deep_translator import GoogleTranslator
 
 
 API_TOKEN = '7955363428:AAETEug-nrrOVhyZMJXSbl61lGFSpBE9giU'
-RUNWARE_API = 'nRRsqiRDM1W2Avir7EI3qpIy4XkPxjPY'
+a = 'nRRsqiRDM1W2Avir7EI3qpIy4XkPxjPY'
 ADMIN_ID = 7940544491
 GENERATION_PRICE = 50
 
@@ -80,7 +80,7 @@ def get_random_music_file():
 
 async def create_image(prompt):
     async with websockets.connect('wss://ws-api.runware.ai/v1') as websocket:
-        await websocket.send(json.dumps([{"taskType": "authentication", "apiKey": RUNWARE_API}]))
+        await websocket.send(json.dumps([{"taskType": "authentication", "apiKey": a}]))
         await websocket.recv()
 
         request = [{
