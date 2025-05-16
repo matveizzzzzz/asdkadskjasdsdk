@@ -11,7 +11,7 @@ from deep_translator import GoogleTranslator
 
 
 API_TOKEN = '7955363428:AAETEug-nrrOVhyZMJXSbl61lGFSpBE9giU'
-a = 'nRRsqiRDM1W2Avir7EI3qpIy4XkPxjPY'
+a = 'dlDwWmQrxiYZ26GGkZe3nxeXmDx5E1mh'
 ADMIN_ID = 7940544491
 GENERATION_PRICE = 50
 
